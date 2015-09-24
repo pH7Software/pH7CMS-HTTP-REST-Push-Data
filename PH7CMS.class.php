@@ -93,7 +93,7 @@ class PH7CMS
 			break;
 
 			case static::JSON_TYPE:
-			    $this->_sResponse; // The data is already encoded in JSON
+			    return $this->_sResponse; // The data is already encoded in JSON
 			break;
 
 			default:
