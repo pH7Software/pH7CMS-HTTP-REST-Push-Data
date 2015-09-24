@@ -125,12 +125,12 @@ class PH7CMS
 		curl_setopt($rCurl, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($rCurl, CURLINFO_HEADER_OUT, true);
 		curl_setopt($rCurl, CURLOPT_CUSTOMREQUEST, "$sType");
-
+		
 		if (!empty($this->_sSslPath))
 		{
-			$this->setCurlOption(CURLOPT_SSL_VERIFYPEER, true);
-			$this->setCurlOption(CURLOPT_SSL_VERIFYHOST, 2);
-			$this->setCurlOption(CURLOPT_CAINFO, $this->_sSslPath);
+			curl_setopt($rCurl, CURLOPT_SSL_VERIFYPEER, true);
+			curl_setopt($rCurl, CURLOPT_SSL_VERIFYHOST, 2);
+			curl_setopt($rCurl, CURLOPT_CAINFO, $this->_sSslPath);
 		}
 
 		// Set the Response into an attribute
