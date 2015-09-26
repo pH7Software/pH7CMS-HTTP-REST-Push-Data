@@ -108,7 +108,7 @@ class PH7CMS
 	 * @param array $aParms The request parameters to send.
 	 * @param string $sType The type of request. Choose only between: 'GET', 'POST', 'PUT' and 'DELETE'.
 	 * @throws InvalidArgumentException If the type (specified in $sType parameter) is invalid.
-	 * @return boolean TRUE if successed, FALSE otherwise.
+	 * @return void
 	 */
 	private function _send($sUrl, array $aParms, $sType)
 	{
