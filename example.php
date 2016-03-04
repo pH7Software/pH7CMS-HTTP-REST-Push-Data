@@ -1,7 +1,7 @@
 <?php
 /**
  * @title          Example Usage of the pH7CMS HTTP REST Push Data
- *                
+ *
  * @author         Pierre-Henry Soria <hello@ph7cms.com>
  * @copyright      (c) 2015, Pierre-Henry Soria. All Rights Reserved.
  * @license        GNU General Public License; See PH7.LICENSE.txt and PH7.COPYRIGHT.txt in the root directory.
@@ -13,7 +13,7 @@ require 'PH7CMS.class.php';
 /*
  * The Private pH7CMS API Key. It is available in your ~/_protected/app/configs/config.ini file after the installation.
  */
-$oPH7CMSApi = new PH7\External\Api\PH7CMS('YourPrivateApiKey', 'http://your-ph7cms-site.com');
+$oPH7CMSApi = new PH7\External\Api\PH7CMS('4545s5sq5ss5sd4s5ds4d5s5d4qs', 'http://http://localhost/GitHub/pH7-Social-Dating-CMS');
 
 
 //---------- ADD ACCOUNT ----------\\
