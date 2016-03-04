@@ -5,7 +5,7 @@
 
 This **PH7CMS class** helps to retrieve the data from the API (natively integrated to pH7CMS) from another app (iOS/Android Apps, websites, etc.).
 
-If you app or website that you want to integrate pH7CMS's data is coded is Java, Python, Ruby, C# or in another language, you can easily transform this class to another language by taking inspiration from the class.
+If your app or website that you want to integrate pH7CMS's data is coded is Java, Python, Ruby, C# or in another language, you can easily transform this class to another language by taking inspiration from the class.
 After that, it would be great if you can send the class by making a **pull request** on this Git repo.
 
 

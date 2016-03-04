@@ -93,7 +93,7 @@ class PH7CMS
             break;
 
             case static::JSON_TYPE:
-                $this->_sResponse; // The data is already encoded in JSON
+                return $this->_sResponse; // The data is already encoded in JSON
             break;
 
             default:
@@ -108,7 +108,7 @@ class PH7CMS
      * @param array $aParms The request parameters to send.
      * @param string $sType The type of request. Choose only between: 'GET', 'POST', 'PUT' and 'DELETE'.
      * @throws InvalidArgumentException If the type (specified in $sType parameter) is invalid.
-     * @return boolean TRUE if successed, FALSE otherwise.
+     * @return void
      */
     private function _send($sUrl, array $aParms, $sType)
     {
@@ -128,9 +128,9 @@ class PH7CMS
 
         if (!empty($this->_sSslPath))
         {
-            $this->setCurlOption(CURLOPT_SSL_VERIFYPEER, true);
-            $this->setCurlOption(CURLOPT_SSL_VERIFYHOST, 2);
-            $this->setCurlOption(CURLOPT_CAINFO, $this->_sSslPath);
+            curl_setopt($rCurl, CURLOPT_SSL_VERIFYPEER, true);
+            curl_setopt($rCurl, CURLOPT_SSL_VERIFYHOST, 2);
+            curl_setopt($rCurl, CURLOPT_CAINFO, $this->_sSslPath);
         }
 
         // Set the Response into an attribute
