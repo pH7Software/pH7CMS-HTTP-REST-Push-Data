@@ -34,6 +34,11 @@ echo var_dump( $oPH7CMSApi->getResponse(PH7\External\Api\PH7CMS::ARR_TYPE) ); //
 ```
 
 
+## Documentation
+
+**[How To Use the RESTful API and Add new Endpoints
+](https://github.com/pH7Software/pH7-Social-Dating-CMS/wiki/How-To-Use-the-RESTful-API-and-Add-new-Endpoints)**
+
 ## Website
 
 **[Social Dating Network Script](http://ph7cms.com)**
